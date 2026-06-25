@@ -345,6 +345,7 @@
     color:var(--ivory);letter-spacing:.02em;
   }
   .when .day{display:block;font-size:.62em;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;font-family:'EB Garamond',serif}
+  .time{margin-top:8px;font-size:clamp(1rem,4vw,1.2rem);letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-family:'EB Garamond',serif}
   .where{margin-top:18px;font-size:clamp(1.1rem,4.4vw,1.32rem);color:var(--ivory-dim);line-height:1.5}
   .where strong{display:block;color:var(--ivory);font-weight:500;font-size:1.12em;letter-spacing:.02em}
 
@@ -497,6 +498,7 @@
         <div class="occasion">Barat</div>
         <div class="occasion-sub">The Wedding Celebration</div>
         <div class="when"><span class="day">Saturday</span>18<sup style="font-size:.5em;vertical-align:super">th</sup> July 2026</div>
+        <div class="time">1:00 PM onwards</div>
         <div class="where">
           <strong>Gloria Palace Marriage Hall</strong>
           Kot Moman, Punjab
@@ -741,7 +743,7 @@
   }
 
   /* ---- countdown ---- */
-  var target = new Date(2026, 6, 18, 0, 0, 0).getTime(); // 18 July 2026, local
+  var target = new Date(2026, 6, 18, 13, 0, 0).getTime(); // 18 July 2026 1:00 PM, local
   var dEl=document.getElementById('cd-days'),
       hEl=document.getElementById('cd-hours'),
       mEl=document.getElementById('cd-mins'),
